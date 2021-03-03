@@ -12,18 +12,6 @@ buildscript {
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        jcenter()
-        
-    }
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
-
 sonarqube {
   properties {
     property "sonar.projectKey", "Jos3lu_ProTetris"
@@ -34,4 +22,16 @@ sonarqube {
 
 plugins {
   id "org.sonarqube" version "3.1.1"
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
