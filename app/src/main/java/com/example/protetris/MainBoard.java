@@ -7,8 +7,19 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class MainBoard {
+    /*
+    Static makes the variables belong to the class not the object,
+     all the objects are gonna have the same value
 
-    //Constantes y variables
+    Test x = new Test();
+    Test y = new Test();
+    x.instanceVariable = 10;
+    y.instanceVariable = 20;
+    System.out.println(x.instanceVariable);
+
+    This print 20.
+     */
+    // Constantes y variables
     private static final int EMPTY = 0;
     private static final int S_PIECE = 1;
     private static final int I_PIECE = 2;
