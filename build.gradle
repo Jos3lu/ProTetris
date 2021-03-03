@@ -20,10 +20,6 @@ sonarqube {
   }
 }
 
-plugins {
-  id "org.sonarqube" version "3.1.1"
-}
-
 allprojects {
     repositories {
         google()
@@ -34,4 +30,8 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+plugins {
+  id "org.sonarqube" version "3.1.1"
 }
